@@ -1,4 +1,4 @@
-package com.example.HappyTweet.controller;
+package com.example.HappySocialMedia.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import com.example.HappyTweet.dto.CommentDto;
-import com.example.HappyTweet.service.CommentService;
+import com.example.HappySocialMedia.dto.CommentDto;
+import com.example.HappySocialMedia.service.CommentService;
 
 import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.OK;
