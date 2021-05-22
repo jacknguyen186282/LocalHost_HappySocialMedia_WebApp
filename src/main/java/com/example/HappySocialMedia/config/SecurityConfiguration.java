@@ -1,6 +1,6 @@
-package com.example.HappyTweet.config;
+package com.example.HappySocialMedia.config;
 
-import com.example.HappyTweet.security.JwtAuthenticationFilter;
+import com.example.HappySocialMedia.security.JwtAuthenticationFilter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
