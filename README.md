@@ -16,7 +16,7 @@ In order to successfully run the Happy Socical web app, there are some recommend
 
 2) Front end 
 
-  - React JS: This is a JavaScript library for building user interface. In this project we will use the version 17.0.2. Thus, to prepare the UI with React JS, first you need to install the npm and Node.js. Then, you can create a React application by installing the create-react-app via your terminal by running the command "npm install -g create-react-app". Finally you can create a project based on React with this command "npx create-react-app myfirstreact" in the terminal (myfirsreact is example for the name of the project).
+  - React JS: This is a JavaScript library for building user interfaces. In this project, we will use version 17.0.2. Thus, to prepare the UI with React JS, first, you need to install the npm and Node.js. Then, you can create a React application by installing the create-react-app via your terminal by running the command "npm install -g create-react-app". Finally, you can create a project based on React with the command "npx create-react-app myfirstreact" in the terminal (myfirsreact is an example of the name of the project).
 
 3) Back end 
 
