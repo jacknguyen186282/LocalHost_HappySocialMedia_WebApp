@@ -15,7 +15,7 @@ import java.security.cert.CertificateException;
 
 import javax.annotation.PostConstruct;
 
-import com.example.HappyTweet.exception.ServerException;
+import com.example.HappySocialMedia.exception.ServerException;
 
 import org.springframework.security.core.Authentication;
 
