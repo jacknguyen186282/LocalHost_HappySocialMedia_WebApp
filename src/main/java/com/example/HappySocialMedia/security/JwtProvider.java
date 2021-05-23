@@ -1,4 +1,4 @@
-package com.example.HappyTweet.security;
+package com.example.HappySocialMedia.security;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
