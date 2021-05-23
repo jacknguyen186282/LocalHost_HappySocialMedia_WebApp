@@ -20,4 +20,12 @@ In order to successfully run the Happy Socical web app, there are some recommend
 
 3) Back end 
 
-  -
+  - Spring Boot: This is an open-source Java-based framework that is used to create a microservice. In this project, Spring Boot is the backbone for our backend, hence, you need to visit the link (https://start.spring.io/) to start to initialize the project as same as the picture below:
+
+![image](https://user-images.githubusercontent.com/58252249/119272486-524a8680-bc30-11eb-8b2d-b5ab7194b133.png)
+
+  - Maven: We use maven to build and manage dependencies, the recommended maven version for this project is 3.8.1.
+
+4) Database 
+  - PostgreSQL: In this project, we will a Postgre as a database to store all the data of our web application, you can download Postgre by this link (https://www.postgresql.org/download/). Then, in the server PostgreSQL 13, you should create the database with the name HappyTwitter for stroring data. 
+
