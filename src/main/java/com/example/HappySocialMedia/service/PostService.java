@@ -1,4 +1,4 @@
-package com.example.HappyTweet.service;
+package com.example.HappySocialMedia.service;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
