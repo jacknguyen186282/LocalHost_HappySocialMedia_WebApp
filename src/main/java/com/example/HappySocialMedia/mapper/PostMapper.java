@@ -1,9 +1,9 @@
-package com.example.HappyTweet.mapper;
+package com.example.HappySocialMedia.mapper;
 
 import com.example.HappyTweet.dto.request.PostRequest;
 import com.example.HappyTweet.dto.response.PostResponse;
 
-import com.example.HappyTweet.model.Post;
+import com.example.HappySocialMedia.model.Post;
 import com.example.HappyTweet.model.User;
 import com.example.HappyTweet.repository.CommentRepository;
 
