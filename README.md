@@ -20,7 +20,7 @@ In order to successfully run the Happy Socical web app, there are some recommend
 
 3) Back end 
 
-  - Spring Boot: This is an open-source Java-based framework that is used to create a microservice. In this project, Spring Boot is the backbone for our backend, hence, you need to visit the link (https://start.spring.io/) to start to initialize the project as same as the picture below:
+  - Spring Boot: This is an open-source Java-based framework that is used to create a microservice. In this project, Spring Boot is the backbone for our backend, hence, you need to visit the link (https://start.spring.io/) to start initializing the project as same as the picture below:
 
 ![image](https://user-images.githubusercontent.com/58252249/119272486-524a8680-bc30-11eb-8b2d-b5ab7194b133.png)
 
@@ -33,9 +33,13 @@ In order to successfully run the Happy Socical web app, there are some recommend
   
 Firstly, downloading the front end and back end code on the github and extract two zip files on your computer. Then open the back end code with IntelliJ, you should check the spring.datasource.password is "rmit" or not. Then normally run the code on the IntelliJ.
 
-Secondly, open the front end code with Visual Studio, next in the terminal of the IDE, enter the command "npm start".
+Secondly, open the front end code with Visual Studio, next in the terminal of the IDE, enter the command the "npm install" and wait for a moment, then enter "npm start".
 
-Finally, enjoy our Happy Social Media!!!
+Finally, you can visit (http://localhost:3000/) and enjoy our Happy Social Media!!!
 
-
+  IV/ AUTHORS
+    - Nguyen Tran Phu
+    - Nguyen Van Tong
+    - Nguyen Minh Nhat
+    - Tran Thien Van
   
