@@ -1,4 +1,4 @@
-package com.example.HappyTweet.service;
+package com.example.HappySocialMedia.service;
 
 import com.example.HappyTweet.dto.request.LoginRequest;
 import com.example.HappyTweet.dto.request.RegisterRequest;
