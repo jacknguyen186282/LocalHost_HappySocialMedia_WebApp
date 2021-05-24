@@ -12,7 +12,7 @@ import java.util.List;
 import com.example.HappyTweet.dto.request.PostRequest;
 import com.example.HappyTweet.dto.response.PostResponse;
 import com.example.HappyTweet.exception.PostNotFoundException;
-import com.example.HappyTweet.mapper.PostMapper;
+import com.example.HappySocialMedia.mapper.PostMapper;
 import com.example.HappySocialMedia.model.Post;
 import com.example.HappyTweet.model.User;
 import com.example.HappySocialMedia.repository.PostRepository;
