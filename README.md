@@ -27,5 +27,15 @@ In order to successfully run the Happy Socical web app, there are some recommend
   - Maven: We use maven to build and manage dependencies, the recommended maven version for this project is 3.8.1.
 
 4) Database 
-  - PostgreSQL: In this project, we will a Postgre as a database to store all the data of our web application, you can download Postgre by this link (https://www.postgresql.org/download/). Then, in the server PostgreSQL 13, you should create the database with the name HappyTwitter for stroring data. 
+  - PostgreSQL: In this project, we will a Postgre as a database to store all the data of our web application, you can download Postgre by this link (https://www.postgresql.org/download/). Then, in the server PostgreSQL 13, you should create the database with the name HappyTwitter with password "rmit" for stroring data. 
 
+  III/ RUNNING APPLICATION
+  
+Firstly, downloading the front end and back end code on the github and extract two zip files on your computer. Then open the back end code with IntelliJ, you should check the spring.datasource.password is "rmit" or not. Then normally run the code on the IntelliJ.
+
+Secondly, open the front end code with Visual Studio, next in the terminal of the IDE, enter the command "npm start".
+
+Finally, enjoy our Happy Social Media!!!
+
+
+  
