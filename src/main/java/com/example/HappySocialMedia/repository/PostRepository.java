@@ -1,11 +1,11 @@
-package com.example.HappyTweet.repository;
+package com.example.HappySocialMedia.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-import com.example.HappyTweet.model.Post;
+import com.example.HappySocialMedia.model.Post;
 import com.example.HappyTweet.model.User;
 
 @Repository

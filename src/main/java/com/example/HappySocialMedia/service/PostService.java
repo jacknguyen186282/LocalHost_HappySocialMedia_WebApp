@@ -13,9 +13,9 @@ import com.example.HappyTweet.dto.request.PostRequest;
 import com.example.HappyTweet.dto.response.PostResponse;
 import com.example.HappyTweet.exception.PostNotFoundException;
 import com.example.HappyTweet.mapper.PostMapper;
-import com.example.HappyTweet.model.Post;
+import com.example.HappySocialMedia.model.Post;
 import com.example.HappyTweet.model.User;
-import com.example.HappyTweet.repository.PostRepository;
+import com.example.HappySocialMedia.repository.PostRepository;
 import com.example.HappyTweet.repository.UserRepository;
 
 import static java.util.stream.Collectors.toList;
