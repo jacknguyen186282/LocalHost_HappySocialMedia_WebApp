@@ -1,4 +1,4 @@
-package com.example.HappyTweet.controller;
+package com.example.HappySocialMedia.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -9,7 +9,7 @@ import java.util.List;
 
 import com.example.HappyTweet.dto.request.PostRequest;
 import com.example.HappyTweet.dto.response.PostResponse;
-import com.example.HappyTweet.service.PostService;
+import com.example.HappySocialMedia.service.PostService;
 
 import static org.springframework.http.ResponseEntity.status;
 
