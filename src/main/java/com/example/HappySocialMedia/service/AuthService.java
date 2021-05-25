@@ -30,6 +30,9 @@ import java.util.Optional;
 @Service
 @AllArgsConstructor
 @Transactional
+
+//This is a class that responsible to write logic related to the user when the correct API is called
+// from the AuthController
 public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
@@ -38,6 +41,7 @@ public class AuthService {
     private final JwtProvider jwtProvider;
     // private final MailService mailService;
 
+    // The register method will save the register information of the user to the database as well as generate token for them
     @Transactional
     public String register(RegisterRequest registerRequest){
         User user = new User();
@@ -45,7 +49,8 @@ public class AuthService {
         user.setEmail(registerRequest.getEmail());
         user.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
         user.setCreated(Instant.now());
-        user.setEnabled(false);
+        user.setEnabled(false); // At first when the user signs up the account of them is still not enabling,
+                                // the user need to verify the token provided by server to enable the account can log in.
 
         userRepository.save(user);
 
@@ -56,6 +61,7 @@ public class AuthService {
         //         "http://localhost:8080/api/auth/verification/" + token));
     }
 
+    // This method will randomly create a Verification token via a link for users
     private String generateVerificationToken(User user) {
         String token = UUID.randomUUID().toString();
         VerificationToken verificationToken = new VerificationToken();
@@ -66,11 +72,13 @@ public class AuthService {
         return token;
     }
 
+    //This method will verify the token is correct or not
     public void verification(String token) {
         Optional<VerificationToken> verificationToken = verificationTokenRepository.findByToken(token);
         fetchUserAndEnable(verificationToken.orElseThrow(() -> new ServerException("Invalid Token. Please input valid token!")));
     }
 
+    // This method will enable the account when the user verify the token
     private void fetchUserAndEnable(VerificationToken verificationToken) {
         String username = verificationToken.getUser().getUsername();
         User user = userRepository.findByUsername(username).orElseThrow(() -> new ServerException("User not found with name - " + username));
@@ -78,14 +86,17 @@ public class AuthService {
         userRepository.save(user);
     }
 
+    // This method will check the credential of information given by user when log in
+    // If the information (user name and password) is correct, the application will allow you log in.
     public AuthenticationResponse login(LoginRequest loginRequest){
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginRequest.getUsername(),
                 loginRequest.getPassword()));
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        String token = jwtProvider.generateToken(authentication);
+        String token = jwtProvider.generateToken(authentication); // Generate a jwt to authenticate the user
         return new AuthenticationResponse(token, loginRequest.getUsername());
     }
 
+    // This method will return the information of current user
     @Transactional(readOnly = true)
     public User getCurrentUser() {
         org.springframework.security.core.userdetails.User principal = 
