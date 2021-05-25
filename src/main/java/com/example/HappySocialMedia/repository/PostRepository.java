@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 import com.example.HappySocialMedia.model.Post;
-import com.example.HappyTweet.model.User;
+import com.example.HappySocialMedia.model.User;
 
 @Repository
 public interface PostRepository extends JpaRepository<Post, Long> {
