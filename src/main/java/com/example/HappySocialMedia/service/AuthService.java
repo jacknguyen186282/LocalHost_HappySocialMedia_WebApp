@@ -4,7 +4,6 @@ import com.example.HappySocialMedia.dto.request.LoginRequest;
 import com.example.HappySocialMedia.dto.request.RegisterRequest;
 import com.example.HappySocialMedia.dto.response.AuthenticationResponse;
 import com.example.HappySocialMedia.exception.ServerException;
-// import com.example.HappyTweet.model.Email;
 import com.example.HappySocialMedia.model.User;
 import com.example.HappySocialMedia.model.VerificationToken;
 import com.example.HappySocialMedia.repository.UserRepository;

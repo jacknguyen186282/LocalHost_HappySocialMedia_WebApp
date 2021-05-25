@@ -27,12 +27,6 @@ public class Comment {
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "postId", referencedColumnName = "postId")
     private Post post;
-//    @ManyToOne(fetch = LAZY)
-//    @JoinColumn(name = "postName", referencedColumnName = "postName")
-//    private Post postName;
-//    @ManyToOne(fetch = LAZY)
-//    @JoinColumn(name = "description", referencedColumnName = "description")
-//    private Post description;
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;

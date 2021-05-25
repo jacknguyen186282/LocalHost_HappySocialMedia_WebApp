@@ -3,6 +3,7 @@ package com.example.HappySocialMedia.dto.response;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import java.time.Instant;
 
 @Data
 @AllArgsConstructor
@@ -14,6 +15,7 @@ public class PostResponse {
     private String postName;
     private String description;
     private String userName;
+    private Instant createdDate;
     private Integer commentCount;
 
 }
