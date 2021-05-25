@@ -1,9 +1,9 @@
-package com.example.HappyTweet.controller;
+package com.example.HappySocialMedia.controller;
 
 import com.example.HappyTweet.dto.request.LoginRequest;
 import com.example.HappyTweet.dto.request.RegisterRequest;
 import com.example.HappyTweet.dto.response.AuthenticationResponse;
-import com.example.HappyTweet.service.AuthService;
+import com.example.HappySocialMedia.service.AuthService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
