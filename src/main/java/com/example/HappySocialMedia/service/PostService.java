@@ -9,14 +9,14 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import com.example.HappyTweet.dto.request.PostRequest;
-import com.example.HappyTweet.dto.response.PostResponse;
-import com.example.HappyTweet.exception.PostNotFoundException;
+import com.example.HappySocialMedia.dto.request.PostRequest;
+import com.example.HappySocialMedia.dto.response.PostResponse;
+import com.example.HappySocialMedia.exception.PostNotFoundException;
 import com.example.HappySocialMedia.mapper.PostMapper;
 import com.example.HappySocialMedia.model.Post;
-import com.example.HappyTweet.model.User;
+import com.example.HappySocialMedia.model.User;
 import com.example.HappySocialMedia.repository.PostRepository;
-import com.example.HappyTweet.repository.UserRepository;
+import com.example.HappySocialMedia.repository.UserRepository;
 
 import static java.util.stream.Collectors.toList;
 
