@@ -21,13 +21,14 @@ import static java.util.Collections.singletonList;
 @Service
 @AllArgsConstructor
 
-//This class overrides the method loadUserByUsername()
+//This class overrides the method loadUserByUsername() that is user by Spring Security to fetch the user details
 public class UserDetailsServiceImplement implements UserDetailsService {
     private final UserRepository userRepository;
 
     @Override
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) {
+        // In this method, we are calling the UserRepository to fetch those details and pass it to the User object
         Optional<User> userOptional = userRepository.findByUsername(username);
         User user = userOptional.orElseThrow(() -> new UsernameNotFoundException(username + "is invalid"));
 
@@ -38,6 +39,7 @@ public class UserDetailsServiceImplement implements UserDetailsService {
             true, true, true, getAuthorities("USER"));
     }
 
+    // This method will grant the authorization for the User object
     private Collection<? extends GrantedAuthority> getAuthorities(String role) {
         return singletonList(new SimpleGrantedAuthority(role));
     }
