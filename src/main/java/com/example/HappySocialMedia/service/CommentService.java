@@ -26,6 +26,9 @@ import static java.util.stream.Collectors.toList;
 @AllArgsConstructor
 @Slf4j
 @Transactional
+
+//This is a service class that responsible to write logic related to the comment when the correct API is called
+// from the CommentController
 public class CommentService {
     private final AuthService authService;
 
@@ -34,6 +37,8 @@ public class CommentService {
     private final CommentRepository commentRepository;
     private final CommentMapper commentMapper;
 
+    // This method will the find the post id that user wants to comment
+    // If it finds out the post, it will save content of comment along with that post id and user id to the database
     public void save(CommentDto commentDto) {
         Post post = postRepository.findById(commentDto.getPostId())
                 .orElseThrow(() -> new PostNotFoundException(commentDto.getPostId().toString()));
@@ -42,6 +47,7 @@ public class CommentService {
 
     }
 
+    // This method will allow user to view all the comments in the specific post by its id
     public List<CommentDto> getCommentsByPost(Long postId) {
         Post post = postRepository.findById(postId).orElseThrow(() -> new PostNotFoundException(postId.toString()));
         return commentRepository.findByPost(post)
@@ -49,6 +55,7 @@ public class CommentService {
                 .map(commentMapper::mapToDto).collect(toList());
     }
 
+    // This method will allow user to view all the comments of the user by the user name
     public List<CommentDto> getCommentsByUsername(String userName) {
         User user = userRepository.findByUsername(userName)
                 .orElseThrow(() -> new UsernameNotFoundException(userName));
