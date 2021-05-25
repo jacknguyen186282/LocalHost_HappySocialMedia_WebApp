@@ -31,7 +31,7 @@ import java.util.Optional;
 @AllArgsConstructor
 @Transactional
 
-//This is a class that responsible to write logic related to the user when the correct API is called
+//This is a service class that responsible to write logic related to the user when the correct API is called
 // from the AuthController
 public class AuthService {
     private final PasswordEncoder passwordEncoder;
