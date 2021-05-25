@@ -1,4 +1,4 @@
-package com.example.HappyTweet.dto.request;
+package com.example.HappySocialMedia.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
