@@ -18,6 +18,8 @@ import static javax.persistence.GenerationType.IDENTITY;
 @Entity
 @Table(name = "users")
 public class User {
+
+    // Create a user model with variables (userID, username, password, email, created and enable boolean)
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long userId;

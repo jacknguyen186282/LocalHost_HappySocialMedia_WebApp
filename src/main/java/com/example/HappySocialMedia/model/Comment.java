@@ -12,10 +12,13 @@ import static javax.persistence.GenerationType.IDENTITY;
 import static javax.persistence.FetchType.LAZY;
 
 @Data
+// Auto generate constructors for the comment model
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 public class Comment {
+
+    // Create Comment model containing variables (id, text, post, user and createdDate)
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;

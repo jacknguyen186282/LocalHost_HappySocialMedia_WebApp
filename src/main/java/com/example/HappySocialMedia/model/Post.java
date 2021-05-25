@@ -19,7 +19,10 @@ import static javax.persistence.FetchType.LAZY;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Post {
+
+    // Create a Post model that contains postID, postName, description, user and createdDate
     @Id
+    // Auto increase the postID by one each time a new post is created
     @GeneratedValue(strategy = IDENTITY)
     private Long postId;
     @NotBlank(message = "Post Name must not be empty or null")
@@ -27,6 +30,7 @@ public class Post {
     @Nullable
     @Lob
     private String description;
+    // marks a column for as a join column for an entity association or an element collection
     @JoinColumn(name = "userId", referencedColumnName = "userId")
     @ManyToOne(fetch = LAZY)
     private User user;

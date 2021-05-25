@@ -11,12 +11,15 @@ import static javax.persistence.FetchType.LAZY;
 import static javax.persistence.GenerationType.IDENTITY;
 
 @Data
+// Auto generate constructors for the model
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+// Create a table in database with the name: "tokens"
 @Table(name = "tokens")
 public class VerificationToken {
 
+    // Create VerificationToken containing variables such as id, token, user and expriryDate
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
