@@ -1,11 +1,11 @@
 package com.example.HappySocialMedia.mapper;
 
-import com.example.HappyTweet.dto.request.PostRequest;
-import com.example.HappyTweet.dto.response.PostResponse;
+import com.example.HappySocialMedia.dto.request.PostRequest;
+import com.example.HappySocialMedia.dto.response.PostResponse;
 
 import com.example.HappySocialMedia.model.Post;
-import com.example.HappyTweet.model.User;
-import com.example.HappyTweet.repository.CommentRepository;
+import com.example.HappySocialMedia.model.User;
+import com.example.HappySocialMedia.repository.CommentRepository;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
