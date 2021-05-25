@@ -6,6 +6,7 @@ import java.util.Optional;
 import com.example.HappyTweet.model.VerificationToken;
 
 @Repository
+// Create a VerificationTokenRepository to store Verification token data and find Token
 public interface VerificationTokenRepository extends JpaRepository<VerificationToken, Long> {
     Optional<VerificationToken> findByToken(String token);
 }

@@ -9,7 +9,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+// Define a class in a repostory layer that is responsible for storing and tracking the data
 @Repository
+
+// Create a commentRepository interface to store comment data and find comment by post or by user
 public interface CommentRepository extends JpaRepository<Comment, Long> {
     List<Comment> findByPost(Post post);
 

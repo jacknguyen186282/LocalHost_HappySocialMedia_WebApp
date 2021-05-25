@@ -9,6 +9,7 @@ import com.example.HappySocialMedia.model.Post;
 import com.example.HappyTweet.model.User;
 
 @Repository
+// Create a PostRepository interface to store post data and find posts by user
 public interface PostRepository extends JpaRepository<Post, Long> {
     List<Post> findByUser(User user);
 }
