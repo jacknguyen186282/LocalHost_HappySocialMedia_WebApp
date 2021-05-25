@@ -13,6 +13,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
+
+// The Swagger will help us to easily view the architecture of the back end on web
 public class SwaggerConfiguration {
     @Bean
     public Docket happySocialMediaApi() {
