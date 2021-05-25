@@ -1,15 +1,15 @@
 package com.example.HappySocialMedia.service;
 
-import com.example.HappyTweet.dto.request.LoginRequest;
-import com.example.HappyTweet.dto.request.RegisterRequest;
-import com.example.HappyTweet.dto.response.AuthenticationResponse;
-import com.example.HappyTweet.exception.ServerException;
+import com.example.HappySocialMedia.dto.request.LoginRequest;
+import com.example.HappySocialMedia.dto.request.RegisterRequest;
+import com.example.HappySocialMedia.dto.response.AuthenticationResponse;
+import com.example.HappySocialMedia.exception.ServerException;
 // import com.example.HappyTweet.model.Email;
-import com.example.HappyTweet.model.User;
-import com.example.HappyTweet.model.VerificationToken;
-import com.example.HappyTweet.repository.UserRepository;
-import com.example.HappyTweet.repository.VerificationTokenRepository;
-import com.example.HappyTweet.security.JwtProvider;
+import com.example.HappySocialMedia.model.User;
+import com.example.HappySocialMedia.model.VerificationToken;
+import com.example.HappySocialMedia.repository.UserRepository;
+import com.example.HappySocialMedia.repository.VerificationTokenRepository;
+import com.example.HappySocialMedia.security.JwtProvider;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
