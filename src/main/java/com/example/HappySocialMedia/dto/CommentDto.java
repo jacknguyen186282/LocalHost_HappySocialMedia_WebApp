@@ -9,6 +9,8 @@ import java.time.Instant;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
+// Create a CommentDto that stores variables such as id, postId, createdDate, text, username, postname and post description
 public class CommentDto {
     private Long id;
     private Long postId;

@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
+// Create a DTO name PostResponse that contains id, postName, description, userName and commentCount
 public class PostResponse {
     private Long id;
     private String postName;

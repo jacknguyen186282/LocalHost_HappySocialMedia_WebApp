@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
+// Create a PostRequest where the information only contains postID, postName and description
 public class PostRequest {
     private Long postId;
     private String postName;

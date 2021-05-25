@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
+// Create a LoginRequest where the information only contains username and password
 public class LoginRequest {
     private String username;
     private String password;
