@@ -1,4 +1,4 @@
-package com.example.HappyTweet.service;
+package com.example.HappySocialMedia.service;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -13,13 +13,15 @@ import lombok.AllArgsConstructor;
 import java.util.Collection;
 import java.util.Optional;
 
-import com.example.HappyTweet.model.User;
-import com.example.HappyTweet.repository.UserRepository;
+import com.example.HappySocialMedia.model.User;
+import com.example.HappySocialMedia.repository.UserRepository;
 
 import static java.util.Collections.singletonList;
 
 @Service
 @AllArgsConstructor
+
+//This class overrides the method loadUserByUsername()
 public class UserDetailsServiceImplement implements UserDetailsService {
     private final UserRepository userRepository;
 
