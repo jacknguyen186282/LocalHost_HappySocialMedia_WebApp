@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import com.example.HappyTweet.dto.request.PostRequest;
-import com.example.HappyTweet.dto.response.PostResponse;
+import com.example.HappySocialMedia.dto.request.PostRequest;
+import com.example.HappySocialMedia.dto.response.PostResponse;
 import com.example.HappySocialMedia.service.PostService;
 
 import static org.springframework.http.ResponseEntity.status;

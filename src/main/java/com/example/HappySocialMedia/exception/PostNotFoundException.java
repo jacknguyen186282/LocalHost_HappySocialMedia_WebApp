@@ -1,4 +1,4 @@
-package com.example.HappyTweet.exception;
+package com.example.HappySocialMedia.exception;
 
 public class PostNotFoundException extends RuntimeException {
     public PostNotFoundException(String exceptionMessage) {
