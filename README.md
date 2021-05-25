@@ -40,7 +40,8 @@ Finally, you can visit (http://localhost:3000/) and enjoy our Happy Social Media
   IV/FIX COMMON BUGS (IF IT APPEARS)
   
   If you run the back end code on IntelliJ and encounter the error "Did you mean null?" in PostMapper.java and CommentMapper.java, there are 3 recommended ways to fix this in order to smoothly run our websites
-    - Method 1: In the PostMapper.java, you should comment out all the code lines that have the annotation Mapping (@Mapping). Then repeat the same with the CommentMapper.java
+  
+  - Method 1: In the PostMapper.java, you should comment out all the code lines that have the annotation Mapping (@Mapping). Then repeat the same with the CommentMapper.java
     
 ![image](https://user-images.githubusercontent.com/58252249/119513109-20efc900-bd9e-11eb-9584-e58055747a62.png)
     
@@ -65,12 +66,12 @@ Finally, you can visit (http://localhost:3000/) and enjoy our Happy Social Media
 
   VI/ ACKNOWLEDGEMENTS
   
-  FreeCodeCamp, Spring Boot and Angular Tutorial - Build a Reddit Clone (Coding Project), Accessed: May-15-2021, Available [Online]: https://www.youtube.com/watch?v=DKlTBBuc32c&ab_channel=freeCodeCamp.org
+  [1] FreeCodeCamp, Spring Boot and Angular Tutorial - Build a Reddit Clone (Coding Project), Accessed: May-15-2021, Available [Online]: https://www.youtube.com/watch?v=DKlTBBuc32c&ab_channel=freeCodeCamp.org
   
-  Jwt.io ,"JWT.IO - JSON Web Tokens Introduction", 2021. [Online]. Available: 
+  [2] Jwt.io ,"JWT.IO - JSON Web Tokens Introduction", 2021. [Online]. Available: 
 https://jwt.io/introduction.
 
-  Mapstruct.org ,"MapStruct – Java bean mappings, the easy way!", 2021. [Online]. 
+  [3] Mapstruct.org ,"MapStruct – Java bean mappings, the easy way!", 2021. [Online]. 
 Available: https://mapstruct.org/.
 
-  React-redux.js.org ,"Hooks | React Redux", 2021. [Online]. Available: https://reactredux.js.org/api/hooks.
+  [4] React-redux.js.org ,"Hooks | React Redux", 2021. [Online]. Available: https://reactredux.js.org/api/hooks.
