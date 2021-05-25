@@ -38,8 +38,9 @@ Secondly, open the front end code with Visual Studio, next in the terminal of th
 Finally, you can visit (http://localhost:3000/) and enjoy our Happy Social Media!!!
 
   IV/ AUTHORS
-    - Nguyen Tran Phu
-    - Nguyen Van Tong
-    - Nguyen Minh Nhat
-    - Tran Thien Van
+  
+  - Nguyen Tran Phu
+  - Nguyen Van Tong
+  - Nguyen Minh Nhat
+  - Tran Thien Van
   
